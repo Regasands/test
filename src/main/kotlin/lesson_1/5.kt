@@ -5,19 +5,18 @@
 //- Переведи в коде количество секунд в целые минуты и целые часы, сохраняя остаток секунд и минут в новые переменные;
 //- Выведи в консоль время, проведенное в космосе в формате [часы:минуты:секунды], например так: 01:30:09;
 //- Значения часов, минут и секунд отображать двумя цифрами.
-
+const val TIME_SECOND_TO_HOURS: Int = 3600
+const val TIME_MINUTE_TO_HOURS: Int = 60;
 fun main() {
         val seconds: Short = 6480;
 
-        val hour = seconds / 3600;
-        val remainingHours = seconds % 3600;
-        val minute = remainingHours / 60;
-        val secondsDiv = remainingHours % 60;
+        val hour = seconds / TIME_SECOND_TO_HOURS;
+        val remainingHours = seconds % TIME_SECOND_TO_HOURS;
+        val minute = remainingHours / TIME_MINUTE_TO_HOURS;
+        val secondsDiv = remainingHours % TIME_MINUTE_TO_HOURS;
 
-        val hourStr = hour.toString().padStart(2, '0');
-        val minuteStr = minute.toString().padStart(2, '0');
-        val secondsStr = secondsDiv.toString().padStart(2, '0');
-        println("$hourStr:$minuteStr:$secondsStr");
+
+        println(String.format("%01d:%01d:%01d", hour, minute, secondsDiv));
 
 
 }
