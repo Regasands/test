@@ -11,8 +11,11 @@
 //Если получается нецелое число, то дробная часть должна отбрасываться.
 
 fun main() {
-    val Crystal: Byte = 7;
-    val Iron: Byte = 11;
-    println((Crystal * 1.2 - Crystal).toInt())
-    println((Iron * 1.2 - Iron).toInt());
+    val amount = 70000.0;
+    val rate = 16.7 / 100;
+    val years = 20;
+
+    val finalAmount = amount * Math.pow(1 + rate, years.toDouble());
+
+    println("%.3f".format(finalAmount));
 }
