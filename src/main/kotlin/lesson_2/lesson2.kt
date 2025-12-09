@@ -8,10 +8,11 @@
 //– В консоли должно быть выведено дробное число с 2 знаками после запятой
 
 fun main() {
-    val a = 3;
-    val b = 4;
-    val c = 3;
-    val d = 5;
-    val ResultAveragePoint = (a + b + c + d) / 4.0;
-    println("%.2f".format(ResultAveragePoint))
+    val first_student = 3;
+    val second_student = 4;
+    val third_student = 3;
+    val fourth_student = 5;
+    val count_student = 4;
+    val result_average_point = (first_student + second_student + third_student + fourth_student).toFloat() / 4;
+    println("%.2f".format(result_average_point))
 }
