@@ -8,13 +8,14 @@ package lesson_2
 //– Напиши программу, которая обработает данные и подсчитает час и минуту прибытия поезда;
 //– Выведи результат в консоль в формате [часы:минуты], используя двузначное представление чисел (например, 17:05, а не 17:5).
 
-const val MinuteToHour = 60;
+const val MINUTE_TO_HOUR = 60;
 
 fun main() {
-    val StartHour: Byte = 9;
-    val StartMinute: Short = 39;
-    val  DurationOfTrip = 457;
-    val EndHour = StartHour + ((StartMinute + DurationOfTrip) / 60 );
-    val EndMinute = (DurationOfTrip + StartMinute) % MinuteToHour;
-    println("%02d:%02d".format(EndHour, EndMinute));
+    val start_hour: Byte = 9;
+    val start_minute: Short = 39;
+    val duration_of_trip = 457;
+    val sum_minute = start_minute + duration_of_trip;
+    val end_hour = start_hour + (sum_minute / MINUTE_TO_HOUR );
+    val end_minute = sum_minute % MINUTE_TO_HOUR;
+    println("%02d:%02d".format(end_hour, end_minute));
 };
