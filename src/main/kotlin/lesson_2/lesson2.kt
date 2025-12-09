@@ -7,13 +7,16 @@
 //– Среднюю ЗП одного сотрудника после устройства стажеров.
 //
 //Каждый пункт посчитать и сохранить в переменную с соответствующим названием. Все значения необходимо вывести в виде целых чисел.
-const val salary_50 = 30000;
-const val salary_20 = 20000;
+
 
 fun main() {
-    val CommonExpenes_50 = salary_50 * 50;
-    val CommonExpenes_20 = salary_20 * 20;
-    val AverageExpenes = (CommonExpenes_20 + CommonExpenes_50) / 70;
+    val salary50 = 30000;
+    val salary_20 = 20000;
+    val count_people_with_hight_salary = 50;
+    val count_people_with_low_salary = 20;
+    val common_expenes_50 = salary_50 * count_people_with_hight_salary;
+    val common_expenes_20 = salary_20 * count_people_with_low_salary;
+    val average_expenes = (CommonExpenes_20 + CommonExpenes_50) / 70;
     println(CommonExpenes_50);
     println(CommonExpenes_20);
     println(AverageExpenes);
