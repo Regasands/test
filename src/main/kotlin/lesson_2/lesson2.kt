@@ -10,15 +10,15 @@
 
 
 fun main() {
-    val salary50 = 30000;
+    val salary_50 = 30000;
     val salary_20 = 20000;
     val count_people_with_hight_salary = 50;
     val count_people_with_low_salary = 20;
     val common_expenes_50 = salary_50 * count_people_with_hight_salary;
     val common_expenes_20 = salary_20 * count_people_with_low_salary;
-    val average_expenes = (CommonExpenes_20 + CommonExpenes_50) / 70;
-    println(CommonExpenes_50);
-    println(CommonExpenes_20);
-    println(AverageExpenes);
+    val average_expenes = (common_expenes_20 + common_expenes_50) / 70;
+    println(common_expenes_50);
+    println(common_expenes_20);
+    println(average_expenes);
 
 }
